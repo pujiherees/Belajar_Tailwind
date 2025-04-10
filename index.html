@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Belajar Tailwind</title>
-    <link href="./style/output.css" rel="stylesheet"></link>
+    <link rel="stylesheet" href="style/output.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined" rel="stylesheet" />
 </head>
 <body class="px-4 sm:px-8 md:px-16 font-poppins">
@@ -178,11 +178,11 @@
                 <button class="w-10 h-10 border border-gray-300 rounded hover:bg-accent hover:text-white text-black transition">4</button>
             </div>
 
-            <div class="flex justify-center gap-10 py-10">
+            <div class="flex flex-col lg:flex-row items-center justify-center gap-10 py-10 px-4">
 
-                <div class="flex items-center w-[600px]">
-                    <img src="./image/image 5.png" alt="Summer Cactus & Succulents" class="w-full h-58 object-cover">
-                    <div class="ml-6 text-right">
+                <div class="bg-white rounded-lg p-6 flex justify-center items-center">
+                    <img src="./image/image 5.png" alt="Summer Cactus & Succulents" class="w-full max-w-[260px] h-auto object-contain">
+                    <div class="sm:ml-6 mt-4 sm:mt-0 text-center sm:text-right">
                         <h3 class="font-bold text-lg">SUMMER CACTUS <br>& SUCCULENTS</h3>
                         <p class="text-typo mt-1 mr-5 ml-0 text-sm text-justify w-full flex">
                             We are an online plant shop offering a wide range of cheap and trendy plants.
@@ -193,9 +193,9 @@
                     </div>
                 </div>
 
-                <div class="flex items-center w-[600px]">
-                    <img src="./image/image 3.png" alt="Summer Cactus & Succulents" class="w-full h-58 object-cover">
-                    <div class="ml-6 text-right">
+                <div class="bg-white rounded-lg p-6 flex justify-center items-center">
+                    <img src="./image/image 3.png" alt="Summer Cactus & Succulents" class="w-full max-w-[260px] h-auto object-contain">
+                    <div class="sm:ml-6 mt-4 sm:mt-0 text-center sm:text-right">
                         <h3 class="font-bold text-lg">STYLING TRENDS <br>& MUCH MORE</h3>
                         <p class="text-typo mt-1 mr-5 ml-0 text-sm text-justify w-full flex">
                             We are an online plant shop offering a wide range of cheap and trendy plants.
@@ -207,36 +207,45 @@
                 </div>
             </div>
            
-            <footer class="bg-light-green px-4 py-4 mt-12 text-center text-sm">
-                <div class="max-w-7xl mx-auto flex items-center space-x-20">
-                  <!-- Logo -->
-                  <img src="./image/logo.png" alt="Greenshop Logo" class="w-28 h-auto" />
-              
-                  <!-- Location -->
-                  <div class="flex items-center space-x-2">
-                    <img src="./image/Location.svg" alt="Location Icon" class="w-5 h-5" />
+            <footer class="bg-light-green px-4 py-6 mt-12 text-sm">
+            <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center sm:items-start gap-6 sm:gap-10">
+                
+                <!-- Logo -->
+                <div class="w-full sm:w-auto flex justify-center sm:justify-start">
+                <img src="./image/logo.png" alt="Greenshop Logo" class="w-36 sm:w-40 h-auto" />
+                </div>
+
+                <!-- Info Items -->
+                <div class="w-full sm:w-auto flex flex-col sm:flex-row items-center sm:items-start justify-center sm:justify-start gap-6 sm:gap-10 text-center sm:text-left">
+                
+                <!-- Location -->
+                <div class="flex items-start gap-2 w-full sm:w-auto justify-center sm:justify-start">
+                    <img src="./image/Location.svg" alt="Location Icon" class="w-5 h-5 mt-1" />
                     <p class="text-sm text-typo">
-                      70 West Buckingham Ave. <br />
-                      Farmingdale, NY 11735
+                    70 West Buckingham Ave.<br />
+                    Farmingdale, NY 11735
                     </p>
-                  </div>
-              
-                  <!-- Email -->
-                  <div class="flex items-center space-x-2">
-                    <img src="./image/Message.png" alt="Email Icon" class="w-5 h-5" />
+                </div>
+
+                <!-- Email -->
+                <div class="flex items-start gap-2 w-full sm:w-auto justify-center sm:justify-start">
+                    <img src="./image/Message.png" alt="Email Icon" class="w-5 h-5 mt-1" />
                     <p class="text-sm text-typo">contact@greenshop.com</p>
-                  </div>
-              
-                  <!-- Phone -->
-                  <div class="flex items-center space-x-2">
-                    <img src="./image/Calling.png" alt="Phone Icon" class="w-5 h-5" />
+                </div>
+
+                <!-- Phone -->
+                <div class="flex items-start gap-2 w-full sm:w-auto justify-center sm:justify-start">
+                    <img src="./image/Calling.png" alt="Phone Icon" class="w-5 h-5 mt-1" />
                     <p class="text-sm text-typo">+88 01911 717 490</p>
-                  </div>
-                </div> 
-              </footer>
-              <div class="text-center text-sm text-gray-600 mt-10 mb-2">
-                &copy; 2025 GreenShop. All Rights Reserved.
-              </div>
+                </div>
+
+                </div>
+            </div>
+            </footer>
+
+            <div class="text-center text-sm text-gray-600 mt-4 mb-4">
+            &copy; 2025 GreenShop. All Rights Reserved.
+            </div>
         </div>
     </section>
 </body>
